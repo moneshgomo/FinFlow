@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #111827;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+header h1 {
+  color: #111827;
+  margin: 0;
+  font-size: 42px;
+}
+
+header p {
+  color: #6b7280;
+}
+
+main {
+  width: 90%;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.card,
+.result-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.file-name {
+  color: #2563eb;
+}
+
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  margin-top: 15px;
+  color: #dc2626;
+}
+
+.result-card {
+  border-left: 5px solid #111827;
+}
+
+.result-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.result-item span {
+  display: block;
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.result-item strong {
+  display: block;
+  line-height: 1.5;
+}
+
+.rag {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f3f4f6;
+  border-radius: 10px;
+}
+
+.rag h3 {
+  margin-top: 0;
+}

@@ -10,7 +10,7 @@ import com.finflow.backend.service.ReceiptService;
 import java.io.IOException;
 
 @RestController
-@RequestMapping
+@CrossOrigin("*")
 public class UploadController {
 
     private final ReceiptService receiptService;
@@ -19,18 +19,10 @@ public class UploadController {
         this.receiptService = receiptService;
     }
 
-    @PostMapping(
-            value = "/upload",
-            consumes = "multipart/form-data"
-    )
-    public ResponseEntity<ReceiptResponse> uploadReceipt(
-            @RequestPart("file") MultipartFile file,
-            @RequestPart("context") String context
-    ) throws IOException {
+    @PostMapping(value = "/upload",consumes = "multipart/form-data")
+    public ResponseEntity<ReceiptResponse> uploadReceipt(@RequestPart("file") MultipartFile file,@RequestPart("context") String context) throws IOException {
 
-        ReceiptResponse response =
-                receiptService.processReceipt(file, context);
-
+        ReceiptResponse response = receiptService.processReceipt(file, context);
         return ResponseEntity.ok(response);
     }
 }
