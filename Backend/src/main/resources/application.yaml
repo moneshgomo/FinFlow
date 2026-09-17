@@ -8,6 +8,6 @@ spring:
       max-file-size: 10MB
 
 groq:
-  api-key: {GROQ_API_KEY}    # GEN AI APIs
-  model: openai/gpt-oss-20b  # openai model 
+  api-key: {GROQ_API_KEY}    
+  model: openai/gpt-oss-20b  
 
